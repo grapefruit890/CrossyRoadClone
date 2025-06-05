@@ -13,9 +13,11 @@ public class UImanager : MonoBehaviour
     private Vector3 XYZ;
     private TextMeshProUGUI XYZMessage;
     private float previousScore;
-    private float previousCoins;
+    private int previousCoins;
     void Start()
     {
+        StartCoroutine(WaitForPlayer());
+        // player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         InvokeRepeating("ShowDebugInfo", 0f, 1f);
         previousScore = 0;
         previousCoins = 0;
@@ -25,7 +27,7 @@ public class UImanager : MonoBehaviour
 
         // deadMessage.gameObject.SetActive(false);
 
-        ShowDebugInfo();
+        // ShowDebugInfo();
     }
 
     void Update()
@@ -53,6 +55,16 @@ public class UImanager : MonoBehaviour
 
 
     }
+    IEnumerator WaitForPlayer()
+    {
+        while (player == null)
+        {
+            GameObject obj = GameObject.FindGameObjectWithTag("Player");
+            if (obj != null)
+                player = obj.GetComponent<PlayerController>();
 
+            yield return null;
+        }
+    }
 
 }

@@ -132,6 +132,6 @@ MonoBehaviour:
   - {fileID: 8431088652853220755, guid: 75f74ebc3f0dfb945837e6803481ced9, type: 3}
   - {fileID: 8965871032495189021, guid: 195291e90d13ff543aadec06c9b56d32, type: 3}
   - {fileID: 4295395953777375063, guid: 55d47e154a266164095a114ccf27f78a, type: 3}
-  minCarSpeed: 1
-  maxCarSpeed: 5
+  minCarSpeed: 2
+  maxCarSpeed: 9
   spawnInterval: 5

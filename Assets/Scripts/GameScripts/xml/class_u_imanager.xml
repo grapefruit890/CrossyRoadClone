@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_u_imanager" kind="class" language="C#" prot="public">
+    <compoundname>UImanager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_imanager_1adb18b359ddcc3670e5b0642a10174d3c" prot="public" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI UImanager.scoreMessage</definition>
+        <argsstring></argsstring>
+        <name>scoreMessage</name>
+        <qualifiedname>UImanager.scoreMessage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UImanager.cs" line="8" column="28" bodyfile="UImanager.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_imanager_1a029efbd9a63297e40395d48c2a2b1ee7" prot="public" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI UImanager.DebugInfoMessage</definition>
+        <argsstring></argsstring>
+        <name>DebugInfoMessage</name>
+        <qualifiedname>UImanager.DebugInfoMessage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UImanager.cs" line="9" column="28" bodyfile="UImanager.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_imanager_1a7a35517af960b66d97d75b325d841837" prot="public" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI UImanager.deadMessage</definition>
+        <argsstring></argsstring>
+        <name>deadMessage</name>
+        <qualifiedname>UImanager.deadMessage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UImanager.cs" line="10" column="28" bodyfile="UImanager.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_imanager_1a4d94cef644edeb7e6113e41a84469cff" prot="public" static="no" mutable="no">
+        <type><ref refid="class_player_controller" kindref="compound">PlayerController</ref></type>
+        <definition>PlayerController UImanager.player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <qualifiedname>UImanager.player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UImanager.cs" line="11" column="29" bodyfile="UImanager.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_imanager_1abebe4bf4843bcc601ccd0b0d9df7908c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UImanager.DebugInfo</definition>
+        <argsstring></argsstring>
+        <name>DebugInfo</name>
+        <qualifiedname>UImanager.DebugInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UImanager.cs" line="12" column="19" bodyfile="UImanager.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_imanager_1a55dc0700504b34a9a20a7648a043f512" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UImanager.XYZ</definition>
+        <argsstring></argsstring>
+        <name>XYZ</name>
+        <qualifiedname>UImanager.XYZ</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UImanager.cs" line="13" column="21" bodyfile="UImanager.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_imanager_1a421a67d97350c04942721fa2bfa87002" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI UImanager.XYZMessage</definition>
+        <argsstring></argsstring>
+        <name>XYZMessage</name>
+        <qualifiedname>UImanager.XYZMessage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UImanager.cs" line="14" column="29" bodyfile="UImanager.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_imanager_1aa7d87ce64c999a646c5755daa414ced0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UImanager.previousScore</definition>
+        <argsstring></argsstring>
+        <name>previousScore</name>
+        <qualifiedname>UImanager.previousScore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UImanager.cs" line="15" column="19" bodyfile="UImanager.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_imanager_1ac22c2559f9eaaea9443357589c815ffa" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UImanager.previousCoins</definition>
+        <argsstring></argsstring>
+        <name>previousCoins</name>
+        <qualifiedname>UImanager.previousCoins</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UImanager.cs" line="16" column="19" bodyfile="UImanager.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_imanager_1a6fbf7f26ac7e9c9a924aa0f2255be394" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UImanager.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>UImanager.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UImanager.cs" line="17" column="10" bodyfile="UImanager.cs" bodystart="17" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_imanager_1ac9d8975d804371a0b6534e52f4a2e3fe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UImanager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>UImanager.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UImanager.cs" line="31" column="10" bodyfile="UImanager.cs" bodystart="31" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_imanager_1a3689a1eec560fd7c70256d5733fda6cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UImanager.ShowDebugInfo</definition>
+        <argsstring>()</argsstring>
+        <name>ShowDebugInfo</name>
+        <qualifiedname>UImanager.ShowDebugInfo</qualifiedname>
+        <briefdescription>
+<para>Отобразить отладочную информацию (для разработчика) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UImanager.cs" line="48" column="10" bodyfile="UImanager.cs" bodystart="48" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UImanager</label>
+        <link refid="class_u_imanager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>GameManagerScript</label>
+        <link refid="class_game_manager_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="3">
+        <label>PlayerController</label>
+        <link refid="class_player_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>GameManager</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>uimanager</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UImanager</label>
+        <link refid="class_u_imanager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="UImanager.cs" line="6" column="7" bodyfile="UImanager.cs" bodystart="7" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_u_imanager_1a7a35517af960b66d97d75b325d841837" prot="public" virt="non-virtual"><scope>UImanager</scope><name>deadMessage</name></member>
+      <member refid="class_u_imanager_1abebe4bf4843bcc601ccd0b0d9df7908c" prot="private" virt="non-virtual"><scope>UImanager</scope><name>DebugInfo</name></member>
+      <member refid="class_u_imanager_1a029efbd9a63297e40395d48c2a2b1ee7" prot="public" virt="non-virtual"><scope>UImanager</scope><name>DebugInfoMessage</name></member>
+      <member refid="class_u_imanager_1a4d94cef644edeb7e6113e41a84469cff" prot="public" virt="non-virtual"><scope>UImanager</scope><name>player</name></member>
+      <member refid="class_u_imanager_1ac22c2559f9eaaea9443357589c815ffa" prot="private" virt="non-virtual"><scope>UImanager</scope><name>previousCoins</name></member>
+      <member refid="class_u_imanager_1aa7d87ce64c999a646c5755daa414ced0" prot="private" virt="non-virtual"><scope>UImanager</scope><name>previousScore</name></member>
+      <member refid="class_u_imanager_1adb18b359ddcc3670e5b0642a10174d3c" prot="public" virt="non-virtual"><scope>UImanager</scope><name>scoreMessage</name></member>
+      <member refid="class_u_imanager_1a3689a1eec560fd7c70256d5733fda6cc" prot="private" virt="non-virtual"><scope>UImanager</scope><name>ShowDebugInfo</name></member>
+      <member refid="class_u_imanager_1a6fbf7f26ac7e9c9a924aa0f2255be394" prot="private" virt="non-virtual"><scope>UImanager</scope><name>Start</name></member>
+      <member refid="class_u_imanager_1ac9d8975d804371a0b6534e52f4a2e3fe" prot="private" virt="non-virtual"><scope>UImanager</scope><name>Update</name></member>
+      <member refid="class_u_imanager_1a55dc0700504b34a9a20a7648a043f512" prot="private" virt="non-virtual"><scope>UImanager</scope><name>XYZ</name></member>
+      <member refid="class_u_imanager_1a421a67d97350c04942721fa2bfa87002" prot="private" virt="non-virtual"><scope>UImanager</scope><name>XYZMessage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

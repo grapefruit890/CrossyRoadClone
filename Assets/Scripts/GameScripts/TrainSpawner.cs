@@ -32,14 +32,14 @@ public class TrainSpawner : MonoBehaviour
 
     void Start()
     {
+        StartCoroutine(WaitForPlayer());
 
 
 
-
-        if (player == null)
-        {
-            player = GameObject.FindWithTag("Player");
-        }
+        // if (player == null)
+        // {
+        //     player = GameObject.FindWithTag("Player");
+        // }
 
         // сделать спавн светофоров здесь
         trafficLightPos = new Vector3(transform.position.x, transform.position.y + 0.63f ,transform.position.z + 0.1f);
@@ -179,5 +179,14 @@ public class TrainSpawner : MonoBehaviour
             blinkRoutine = StartCoroutine(BlinkLights());
         }
     }
+    IEnumerator WaitForPlayer()
+    {
+        while (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            yield return null;
+        }
+    }
+
 
 }

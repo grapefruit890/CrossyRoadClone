@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "CarSpawner.CarData", "class_car_spawner_1_1_car_data.html", null ],
     [ "MonoBehaviour", null, [
       [ "CameraFollow", "class_camera_follow.html", null ],
       [ "CarSpawner", "class_car_spawner.html", null ],
@@ -12,5 +13,6 @@ var hierarchy =
       [ "grassSpawner", "classgrass_spawner.html", null ],
       [ "waterSpawner", "classwater_spawner.html", null ],
       [ "water_lily_animation", "classwater__lily__animation.html", null ]
-    ] ]
+    ] ],
+    [ "TrainSpawner.TrainData", "class_train_spawner_1_1_train_data.html", null ]
 ];

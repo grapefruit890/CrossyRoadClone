@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_main_menu" kind="class" language="C#" prot="public">
+    <compoundname>MainMenu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_main_menu_1a2624be58933f3fc03e376bcbfd17c2aa" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MainMenu.CharacterMenu</definition>
+        <argsstring></argsstring>
+        <name>CharacterMenu</name>
+        <qualifiedname>MainMenu.CharacterMenu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainMenu.cs" line="6" column="23" bodyfile="MainMenu.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_main_menu_1a87258054c514341ec549a2e6a4543fa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainMenu.startButton</definition>
+        <argsstring>()</argsstring>
+        <name>startButton</name>
+        <qualifiedname>MainMenu.startButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainMenu.cs" line="7" column="17" bodyfile="MainMenu.cs" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_menu_1a32508d96d62a6378a45211f024e6137c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainMenu.exitButton</definition>
+        <argsstring>()</argsstring>
+        <name>exitButton</name>
+        <qualifiedname>MainMenu.exitButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainMenu.cs" line="11" column="17" bodyfile="MainMenu.cs" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_menu_1a7a8262120d2f2f45ea98b305ccb247eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainMenu.selectCharacterButton</definition>
+        <argsstring>()</argsstring>
+        <name>selectCharacterButton</name>
+        <qualifiedname>MainMenu.selectCharacterButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainMenu.cs" line="15" column="17" bodyfile="MainMenu.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MainMenu</label>
+        <link refid="class_main_menu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MainMenu</label>
+        <link refid="class_main_menu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="MainMenu.cs" line="4" column="7" bodyfile="MainMenu.cs" bodystart="5" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_main_menu_1a2624be58933f3fc03e376bcbfd17c2aa" prot="public" virt="non-virtual"><scope>MainMenu</scope><name>CharacterMenu</name></member>
+      <member refid="class_main_menu_1a32508d96d62a6378a45211f024e6137c" prot="public" virt="non-virtual"><scope>MainMenu</scope><name>exitButton</name></member>
+      <member refid="class_main_menu_1a7a8262120d2f2f45ea98b305ccb247eb" prot="public" virt="non-virtual"><scope>MainMenu</scope><name>selectCharacterButton</name></member>
+      <member refid="class_main_menu_1a87258054c514341ec549a2e6a4543fa3" prot="public" virt="non-virtual"><scope>MainMenu</scope><name>startButton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

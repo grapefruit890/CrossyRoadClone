@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classwater__lily__animation" kind="class" language="C#" prot="public">
+    <compoundname>water_lily_animation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classwater__lily__animation_1ad030e99f25ca473d5f706fa4c2e4cb07" prot="private" static="no" mutable="no">
+        <type>Animator</type>
+        <definition>Animator water_lily_animation.anim</definition>
+        <argsstring></argsstring>
+        <name>anim</name>
+        <qualifiedname>water_lily_animation.anim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="water_lily_animation.cs" line="6" column="22" bodyfile="water_lily_animation.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classwater__lily__animation_1ae8213033123d6761e8fe21a806a0b7c9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void water_lily_animation.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>water_lily_animation.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="water_lily_animation.cs" line="8" column="10" bodyfile="water_lily_animation.cs" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classwater__lily__animation_1a2cf0d207dc1de721f45e65dbd0f06d92" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void water_lily_animation.OnCollisionEnter</definition>
+        <argsstring>(Collision collision)</argsstring>
+        <name>OnCollisionEnter</name>
+        <qualifiedname>water_lily_animation.OnCollisionEnter</qualifiedname>
+        <param>
+          <type>Collision</type>
+          <declname>collision</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="water_lily_animation.cs" line="13" column="10" bodyfile="water_lily_animation.cs" bodystart="13" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>water_lily_animation</label>
+        <link refid="classwater__lily__animation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>water_lily_animation</label>
+        <link refid="classwater__lily__animation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="water_lily_animation.cs" line="4" column="7" bodyfile="water_lily_animation.cs" bodystart="5" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classwater__lily__animation_1ad030e99f25ca473d5f706fa4c2e4cb07" prot="private" virt="non-virtual"><scope>water_lily_animation</scope><name>anim</name></member>
+      <member refid="classwater__lily__animation_1a2cf0d207dc1de721f45e65dbd0f06d92" prot="private" virt="non-virtual"><scope>water_lily_animation</scope><name>OnCollisionEnter</name></member>
+      <member refid="classwater__lily__animation_1ae8213033123d6761e8fe21a806a0b7c9" prot="private" virt="non-virtual"><scope>water_lily_animation</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

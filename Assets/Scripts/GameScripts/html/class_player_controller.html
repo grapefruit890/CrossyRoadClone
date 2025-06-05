@@ -104,6 +104,8 @@ $(function(){initNavTree('class_player_controller.html',''); initResizable(true)
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_player_controller-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PlayerController Class Reference</div></div>
 </div><!--header-->
@@ -111,55 +113,794 @@ $(function(){initNavTree('class_player_controller.html',''); initResizable(true)
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aeaf2ffcc3d5c4a0b0a198a468251ca69" id="r_aeaf2ffcc3d5c4a0b0a198a468251ca69"><td class="memItemLeft" align="right" valign="top"><a id="aeaf2ffcc3d5c4a0b0a198a468251ca69" name="aeaf2ffcc3d5c4a0b0a198a468251ca69"></a>
-<a class="el" href="class_game_manager_script.html">GameManagerScript</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GameManager</b></td></tr>
-<tr class="memdesc:aeaf2ffcc3d5c4a0b0a198a468251ca69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект, отвечающий за управление игрой <br /></td></tr>
+<tr class="memitem:aeaf2ffcc3d5c4a0b0a198a468251ca69" id="r_aeaf2ffcc3d5c4a0b0a198a468251ca69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_manager_script.html">GameManagerScript</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaf2ffcc3d5c4a0b0a198a468251ca69">GameManager</a></td></tr>
+<tr class="memdesc:aeaf2ffcc3d5c4a0b0a198a468251ca69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект, отвечающий за управление игрой  <br /></td></tr>
 <tr class="separator:aeaf2ffcc3d5c4a0b0a198a468251ca69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87c421c67c2b3736edd1753ec135f23a" id="r_a87c421c67c2b3736edd1753ec135f23a"><td class="memItemLeft" align="right" valign="top"><a id="a87c421c67c2b3736edd1753ec135f23a" name="a87c421c67c2b3736edd1753ec135f23a"></a>
-AudioSource&#160;</td><td class="memItemRight" valign="bottom"><b>audioSource</b></td></tr>
+<tr class="memitem:a87c421c67c2b3736edd1753ec135f23a" id="r_a87c421c67c2b3736edd1753ec135f23a"><td class="memItemLeft" align="right" valign="top">AudioSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87c421c67c2b3736edd1753ec135f23a">audioSource</a></td></tr>
 <tr class="separator:a87c421c67c2b3736edd1753ec135f23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a016fcd9b2e79d6d15403bbec7058072f" id="r_a016fcd9b2e79d6d15403bbec7058072f"><td class="memItemLeft" align="right" valign="top"><a id="a016fcd9b2e79d6d15403bbec7058072f" name="a016fcd9b2e79d6d15403bbec7058072f"></a>
-AudioClip&#160;</td><td class="memItemRight" valign="bottom"><b>jumpSound</b></td></tr>
+<tr class="memitem:a016fcd9b2e79d6d15403bbec7058072f" id="r_a016fcd9b2e79d6d15403bbec7058072f"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a016fcd9b2e79d6d15403bbec7058072f">jumpSound</a></td></tr>
 <tr class="separator:a016fcd9b2e79d6d15403bbec7058072f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfedab2ac598c57cdf08ace538ba712d" id="r_adfedab2ac598c57cdf08ace538ba712d"><td class="memItemLeft" align="right" valign="top"><a id="adfedab2ac598c57cdf08ace538ba712d" name="adfedab2ac598c57cdf08ace538ba712d"></a>
-AudioClip&#160;</td><td class="memItemRight" valign="bottom"><b>deadSound</b></td></tr>
+<tr class="memitem:adfedab2ac598c57cdf08ace538ba712d" id="r_adfedab2ac598c57cdf08ace538ba712d"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfedab2ac598c57cdf08ace538ba712d">deadSound</a></td></tr>
 <tr class="separator:adfedab2ac598c57cdf08ace538ba712d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d2a5968f6e05e3a7ba878455c55eaf0" id="r_a7d2a5968f6e05e3a7ba878455c55eaf0"><td class="memItemLeft" align="right" valign="top"><a id="a7d2a5968f6e05e3a7ba878455c55eaf0" name="a7d2a5968f6e05e3a7ba878455c55eaf0"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>deathTimer</b> = 0f</td></tr>
+<tr class="memitem:a7d2a5968f6e05e3a7ba878455c55eaf0" id="r_a7d2a5968f6e05e3a7ba878455c55eaf0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d2a5968f6e05e3a7ba878455c55eaf0">deathTimer</a> = 0f</td></tr>
 <tr class="separator:a7d2a5968f6e05e3a7ba878455c55eaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae31a7991f0a55b70dd4904f6c666af99" id="r_ae31a7991f0a55b70dd4904f6c666af99"><td class="memItemLeft" align="right" valign="top"><a id="ae31a7991f0a55b70dd4904f6c666af99" name="ae31a7991f0a55b70dd4904f6c666af99"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>scoreCounter</b> = 0</td></tr>
+<tr class="memitem:ae31a7991f0a55b70dd4904f6c666af99" id="r_ae31a7991f0a55b70dd4904f6c666af99"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae31a7991f0a55b70dd4904f6c666af99">scoreCounter</a> = 0</td></tr>
 <tr class="separator:ae31a7991f0a55b70dd4904f6c666af99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82dfff2e29b8ade7641a25e2b67f960d" id="r_a82dfff2e29b8ade7641a25e2b67f960d"><td class="memItemLeft" align="right" valign="top"><a id="a82dfff2e29b8ade7641a25e2b67f960d" name="a82dfff2e29b8ade7641a25e2b67f960d"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>coinsCounter</b> = 0</td></tr>
+<tr class="memitem:a82dfff2e29b8ade7641a25e2b67f960d" id="r_a82dfff2e29b8ade7641a25e2b67f960d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82dfff2e29b8ade7641a25e2b67f960d">coinsCounter</a> = 0</td></tr>
 <tr class="separator:a82dfff2e29b8ade7641a25e2b67f960d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c109871eba0057fd2aa1856522a346d" id="r_a7c109871eba0057fd2aa1856522a346d"><td class="memItemLeft" align="right" valign="top"><a id="a7c109871eba0057fd2aa1856522a346d" name="a7c109871eba0057fd2aa1856522a346d"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>jumpForce</b> = 100f</td></tr>
+<tr class="memitem:a7c109871eba0057fd2aa1856522a346d" id="r_a7c109871eba0057fd2aa1856522a346d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c109871eba0057fd2aa1856522a346d">jumpForce</a> = 100f</td></tr>
 <tr class="separator:a7c109871eba0057fd2aa1856522a346d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0928605583f0563cd84fe43119d336ec" id="r_a0928605583f0563cd84fe43119d336ec"><td class="memItemLeft" align="right" valign="top"><a id="a0928605583f0563cd84fe43119d336ec" name="a0928605583f0563cd84fe43119d336ec"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>speed</b> = 5f</td></tr>
+<tr class="memitem:a0928605583f0563cd84fe43119d336ec" id="r_a0928605583f0563cd84fe43119d336ec"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0928605583f0563cd84fe43119d336ec">speed</a> = 5f</td></tr>
 <tr class="separator:a0928605583f0563cd84fe43119d336ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40cc33c20366a04888a450e8aecf0409" id="r_a40cc33c20366a04888a450e8aecf0409"><td class="memItemLeft" align="right" valign="top"><a id="a40cc33c20366a04888a450e8aecf0409" name="a40cc33c20366a04888a450e8aecf0409"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>speedRot</b> = 1000f</td></tr>
+<tr class="memitem:a40cc33c20366a04888a450e8aecf0409" id="r_a40cc33c20366a04888a450e8aecf0409"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40cc33c20366a04888a450e8aecf0409">speedRot</a> = 1000f</td></tr>
 <tr class="separator:a40cc33c20366a04888a450e8aecf0409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fb63e4d6e703e0d41765445a66f32d7" id="r_a4fb63e4d6e703e0d41765445a66f32d7"><td class="memItemLeft" align="right" valign="top"><a id="a4fb63e4d6e703e0d41765445a66f32d7" name="a4fb63e4d6e703e0d41765445a66f32d7"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>rotationOffset</b></td></tr>
+<tr class="memitem:a4fb63e4d6e703e0d41765445a66f32d7" id="r_a4fb63e4d6e703e0d41765445a66f32d7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fb63e4d6e703e0d41765445a66f32d7">rotationOffset</a></td></tr>
 <tr class="separator:a4fb63e4d6e703e0d41765445a66f32d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a898c2ff9859c43b7ab47d4e9bde7b5fe" id="r_a898c2ff9859c43b7ab47d4e9bde7b5fe"><td class="memItemLeft" align="right" valign="top"><a id="a898c2ff9859c43b7ab47d4e9bde7b5fe" name="a898c2ff9859c43b7ab47d4e9bde7b5fe"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isAlive</b> = true</td></tr>
+<tr class="memitem:a898c2ff9859c43b7ab47d4e9bde7b5fe" id="r_a898c2ff9859c43b7ab47d4e9bde7b5fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a898c2ff9859c43b7ab47d4e9bde7b5fe">isAlive</a> = true</td></tr>
 <tr class="separator:a898c2ff9859c43b7ab47d4e9bde7b5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac85feb612beb223ae47f07232140550c" id="r_ac85feb612beb223ae47f07232140550c"><td class="memItemLeft" align="right" valign="top"><a id="ac85feb612beb223ae47f07232140550c" name="ac85feb612beb223ae47f07232140550c"></a>
-<a class="el" href="class_u_imanager.html">UImanager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>uimanager</b></td></tr>
+<tr class="memitem:ac85feb612beb223ae47f07232140550c" id="r_ac85feb612beb223ae47f07232140550c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_imanager.html">UImanager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac85feb612beb223ae47f07232140550c">uimanager</a></td></tr>
 <tr class="separator:ac85feb612beb223ae47f07232140550c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5f69bfc908da791fabcd4cf77eafdcc" id="r_ad5f69bfc908da791fabcd4cf77eafdcc"><td class="memItemLeft" align="right" valign="top"><a id="ad5f69bfc908da791fabcd4cf77eafdcc" name="ad5f69bfc908da791fabcd4cf77eafdcc"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>squishThreshold</b> = 0.2f</td></tr>
+<tr class="memitem:ad5f69bfc908da791fabcd4cf77eafdcc" id="r_ad5f69bfc908da791fabcd4cf77eafdcc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5f69bfc908da791fabcd4cf77eafdcc">squishThreshold</a> = 0.2f</td></tr>
 <tr class="separator:ad5f69bfc908da791fabcd4cf77eafdcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a076708ee0d3c0e684d85e92a7ad6d4af" id="r_a076708ee0d3c0e684d85e92a7ad6d4af"><td class="memItemLeft" align="right" valign="top"><a id="a076708ee0d3c0e684d85e92a7ad6d4af" name="a076708ee0d3c0e684d85e92a7ad6d4af"></a>
-shieldScript&#160;</td><td class="memItemRight" valign="bottom"><b>shield</b></td></tr>
+<tr class="memitem:a076708ee0d3c0e684d85e92a7ad6d4af" id="r_a076708ee0d3c0e684d85e92a7ad6d4af"><td class="memItemLeft" align="right" valign="top">shieldScript&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a076708ee0d3c0e684d85e92a7ad6d4af">shield</a></td></tr>
 <tr class="separator:a076708ee0d3c0e684d85e92a7ad6d4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae1117d9c4da3193181cddad2c814e467" id="r_ae1117d9c4da3193181cddad2c814e467"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1117d9c4da3193181cddad2c814e467">Start</a> ()</td></tr>
+<tr class="separator:ae1117d9c4da3193181cddad2c814e467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8bc83dffb99867a04be016473ed2c43" id="r_ae8bc83dffb99867a04be016473ed2c43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8bc83dffb99867a04be016473ed2c43">Update</a> ()</td></tr>
+<tr class="separator:ae8bc83dffb99867a04be016473ed2c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79a654f41731fbbe2311a76f227c01cf" id="r_a79a654f41731fbbe2311a76f227c01cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79a654f41731fbbe2311a76f227c01cf">Move</a> ()</td></tr>
+<tr class="separator:a79a654f41731fbbe2311a76f227c01cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c020f7b5324aadef96f35ea51b2edc" id="r_ab6c020f7b5324aadef96f35ea51b2edc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6c020f7b5324aadef96f35ea51b2edc">OnCollisionEnter</a> (Collision collision)</td></tr>
+<tr class="separator:ab6c020f7b5324aadef96f35ea51b2edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cacbc24557b9a6e7848f989122adaf" id="r_a55cacbc24557b9a6e7848f989122adaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55cacbc24557b9a6e7848f989122adaf">OnTriggerEnter</a> (Collider collider)</td></tr>
+<tr class="separator:a55cacbc24557b9a6e7848f989122adaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b312b8f7d0f8570fc3c874aa94841d4" id="r_a1b312b8f7d0f8570fc3c874aa94841d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b312b8f7d0f8570fc3c874aa94841d4">OnCollisionExit</a> (Collision collision)</td></tr>
+<tr class="separator:a1b312b8f7d0f8570fc3c874aa94841d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e312e068a236e6aa38ebad2e681edc5" id="r_a6e312e068a236e6aa38ebad2e681edc5"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e312e068a236e6aa38ebad2e681edc5">Dead</a> ()</td></tr>
+<tr class="separator:a6e312e068a236e6aa38ebad2e681edc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23612f2c9bc5d43e95a7f359bf96b03b" id="r_a23612f2c9bc5d43e95a7f359bf96b03b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23612f2c9bc5d43e95a7f359bf96b03b">PlayJumpSound</a> ()</td></tr>
+<tr class="separator:a23612f2c9bc5d43e95a7f359bf96b03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc987691a15b79074a80260934fb23e1" id="r_abc987691a15b79074a80260934fb23e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc987691a15b79074a80260934fb23e1">OnDrawGizmos</a> ()</td></tr>
+<tr class="separator:abc987691a15b79074a80260934fb23e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64264494a59cba64af657d38ff0410e6" id="r_a64264494a59cba64af657d38ff0410e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64264494a59cba64af657d38ff0410e6">CanJump</a> (Vector3 direction)</td></tr>
+<tr class="separator:a64264494a59cba64af657d38ff0410e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6b0ba9333666df73c8f88980a889adfc" id="r_a6b0ba9333666df73c8f88980a889adfc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b0ba9333666df73c8f88980a889adfc">isGrounded</a> = false</td></tr>
+<tr class="separator:a6b0ba9333666df73c8f88980a889adfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b9fa76e5456725594e87dd40f93611" id="r_a93b9fa76e5456725594e87dd40f93611"><td class="memItemLeft" align="right" valign="top">Rigidbody&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93b9fa76e5456725594e87dd40f93611">rb</a></td></tr>
+<tr class="separator:a93b9fa76e5456725594e87dd40f93611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac646d94772588e3393eb5cb9ac02a5c4" id="r_ac646d94772588e3393eb5cb9ac02a5c4"><td class="memItemLeft" align="right" valign="top">Animator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac646d94772588e3393eb5cb9ac02a5c4">anim</a></td></tr>
+<tr class="separator:ac646d94772588e3393eb5cb9ac02a5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428eff0c3f415286a7df368dcd83a687" id="r_a428eff0c3f415286a7df368dcd83a687"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a428eff0c3f415286a7df368dcd83a687">nextDir</a></td></tr>
+<tr class="separator:a428eff0c3f415286a7df368dcd83a687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4070356293f878b90429b816cdd9122" id="r_ad4070356293f878b90429b816cdd9122"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4070356293f878b90429b816cdd9122">currentPos</a></td></tr>
+<tr class="separator:ad4070356293f878b90429b816cdd9122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf44eb049ca7a3024b8f52cba6cb452b" id="r_aaf44eb049ca7a3024b8f52cba6cb452b"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf44eb049ca7a3024b8f52cba6cb452b">bufferedInput</a></td></tr>
+<tr class="separator:aaf44eb049ca7a3024b8f52cba6cb452b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4bda612ca61decf66ad078da886230c" id="r_ad4bda612ca61decf66ad078da886230c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4bda612ca61decf66ad078da886230c">backJumps</a> = 0</td></tr>
+<tr class="separator:ad4bda612ca61decf66ad078da886230c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb4563ba6aab51ee81df385b77f1b1f" id="r_aacb4563ba6aab51ee81df385b77f1b1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacb4563ba6aab51ee81df385b77f1b1f">isFirstTurn</a> = false</td></tr>
+<tr class="separator:aacb4563ba6aab51ee81df385b77f1b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de9db4c5f8281d8f1d1804d54fc97f6" id="r_a6de9db4c5f8281d8f1d1804d54fc97f6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6de9db4c5f8281d8f1d1804d54fc97f6">holdTimer</a> = 0f</td></tr>
+<tr class="separator:a6de9db4c5f8281d8f1d1804d54fc97f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0218744aae8976dd07c021a69841684c" id="r_a0218744aae8976dd07c021a69841684c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0218744aae8976dd07c021a69841684c">isHoldingKey</a> = false</td></tr>
+<tr class="separator:a0218744aae8976dd07c021a69841684c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1271343fc17c7c822b5f4fecd62d3218" id="r_a1271343fc17c7c822b5f4fecd62d3218"><td class="memItemLeft" align="right" valign="top">KeyCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1271343fc17c7c822b5f4fecd62d3218">heldKey</a> = KeyCode.None</td></tr>
+<tr class="separator:a1271343fc17c7c822b5f4fecd62d3218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a64264494a59cba64af657d38ff0410e6" name="a64264494a59cba64af657d38ff0410e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64264494a59cba64af657d38ff0410e6">&#9670;&#160;</a></span>CanJump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerController.CanJump </td>
+          <td>(</td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>direction</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e312e068a236e6aa38ebad2e681edc5" name="a6e312e068a236e6aa38ebad2e681edc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e312e068a236e6aa38ebad2e681edc5">&#9670;&#160;</a></span>Dead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator PlayerController.Dead </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79a654f41731fbbe2311a76f227c01cf" name="a79a654f41731fbbe2311a76f227c01cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79a654f41731fbbe2311a76f227c01cf">&#9670;&#160;</a></span>Move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerController.Move </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6c020f7b5324aadef96f35ea51b2edc" name="ab6c020f7b5324aadef96f35ea51b2edc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c020f7b5324aadef96f35ea51b2edc">&#9670;&#160;</a></span>OnCollisionEnter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerController.OnCollisionEnter </td>
+          <td>(</td>
+          <td class="paramtype">Collision</td>          <td class="paramname"><span class="paramname"><em>collision</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b312b8f7d0f8570fc3c874aa94841d4" name="a1b312b8f7d0f8570fc3c874aa94841d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b312b8f7d0f8570fc3c874aa94841d4">&#9670;&#160;</a></span>OnCollisionExit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerController.OnCollisionExit </td>
+          <td>(</td>
+          <td class="paramtype">Collision</td>          <td class="paramname"><span class="paramname"><em>collision</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc987691a15b79074a80260934fb23e1" name="abc987691a15b79074a80260934fb23e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc987691a15b79074a80260934fb23e1">&#9670;&#160;</a></span>OnDrawGizmos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerController.OnDrawGizmos </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55cacbc24557b9a6e7848f989122adaf" name="a55cacbc24557b9a6e7848f989122adaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55cacbc24557b9a6e7848f989122adaf">&#9670;&#160;</a></span>OnTriggerEnter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerController.OnTriggerEnter </td>
+          <td>(</td>
+          <td class="paramtype">Collider</td>          <td class="paramname"><span class="paramname"><em>collider</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23612f2c9bc5d43e95a7f359bf96b03b" name="a23612f2c9bc5d43e95a7f359bf96b03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23612f2c9bc5d43e95a7f359bf96b03b">&#9670;&#160;</a></span>PlayJumpSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerController.PlayJumpSound </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1117d9c4da3193181cddad2c814e467" name="ae1117d9c4da3193181cddad2c814e467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1117d9c4da3193181cddad2c814e467">&#9670;&#160;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerController.Start </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8bc83dffb99867a04be016473ed2c43" name="ae8bc83dffb99867a04be016473ed2c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8bc83dffb99867a04be016473ed2c43">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerController.Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac646d94772588e3393eb5cb9ac02a5c4" name="ac646d94772588e3393eb5cb9ac02a5c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac646d94772588e3393eb5cb9ac02a5c4">&#9670;&#160;</a></span>anim</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Animator PlayerController.anim</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87c421c67c2b3736edd1753ec135f23a" name="a87c421c67c2b3736edd1753ec135f23a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87c421c67c2b3736edd1753ec135f23a">&#9670;&#160;</a></span>audioSource</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioSource PlayerController.audioSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4bda612ca61decf66ad078da886230c" name="ad4bda612ca61decf66ad078da886230c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4bda612ca61decf66ad078da886230c">&#9670;&#160;</a></span>backJumps</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PlayerController.backJumps = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf44eb049ca7a3024b8f52cba6cb452b" name="aaf44eb049ca7a3024b8f52cba6cb452b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf44eb049ca7a3024b8f52cba6cb452b">&#9670;&#160;</a></span>bufferedInput</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 PlayerController.bufferedInput</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82dfff2e29b8ade7641a25e2b67f960d" name="a82dfff2e29b8ade7641a25e2b67f960d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82dfff2e29b8ade7641a25e2b67f960d">&#9670;&#160;</a></span>coinsCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PlayerController.coinsCounter = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4070356293f878b90429b816cdd9122" name="ad4070356293f878b90429b816cdd9122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4070356293f878b90429b816cdd9122">&#9670;&#160;</a></span>currentPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 PlayerController.currentPos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adfedab2ac598c57cdf08ace538ba712d" name="adfedab2ac598c57cdf08ace538ba712d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfedab2ac598c57cdf08ace538ba712d">&#9670;&#160;</a></span>deadSound</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioClip PlayerController.deadSound</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d2a5968f6e05e3a7ba878455c55eaf0" name="a7d2a5968f6e05e3a7ba878455c55eaf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d2a5968f6e05e3a7ba878455c55eaf0">&#9670;&#160;</a></span>deathTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PlayerController.deathTimer = 0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeaf2ffcc3d5c4a0b0a198a468251ca69" name="aeaf2ffcc3d5c4a0b0a198a468251ca69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf2ffcc3d5c4a0b0a198a468251ca69">&#9670;&#160;</a></span>GameManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_manager_script.html">GameManagerScript</a> PlayerController.GameManager</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект, отвечающий за управление игрой </p>
+
+</div>
+</div>
+<a id="a1271343fc17c7c822b5f4fecd62d3218" name="a1271343fc17c7c822b5f4fecd62d3218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1271343fc17c7c822b5f4fecd62d3218">&#9670;&#160;</a></span>heldKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KeyCode PlayerController.heldKey = KeyCode.None</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6de9db4c5f8281d8f1d1804d54fc97f6" name="a6de9db4c5f8281d8f1d1804d54fc97f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de9db4c5f8281d8f1d1804d54fc97f6">&#9670;&#160;</a></span>holdTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PlayerController.holdTimer = 0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a898c2ff9859c43b7ab47d4e9bde7b5fe" name="a898c2ff9859c43b7ab47d4e9bde7b5fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a898c2ff9859c43b7ab47d4e9bde7b5fe">&#9670;&#160;</a></span>isAlive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerController.isAlive = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacb4563ba6aab51ee81df385b77f1b1f" name="aacb4563ba6aab51ee81df385b77f1b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb4563ba6aab51ee81df385b77f1b1f">&#9670;&#160;</a></span>isFirstTurn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerController.isFirstTurn = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b0ba9333666df73c8f88980a889adfc" name="a6b0ba9333666df73c8f88980a889adfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0ba9333666df73c8f88980a889adfc">&#9670;&#160;</a></span>isGrounded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerController.isGrounded = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0218744aae8976dd07c021a69841684c" name="a0218744aae8976dd07c021a69841684c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0218744aae8976dd07c021a69841684c">&#9670;&#160;</a></span>isHoldingKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerController.isHoldingKey = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c109871eba0057fd2aa1856522a346d" name="a7c109871eba0057fd2aa1856522a346d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c109871eba0057fd2aa1856522a346d">&#9670;&#160;</a></span>jumpForce</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PlayerController.jumpForce = 100f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a016fcd9b2e79d6d15403bbec7058072f" name="a016fcd9b2e79d6d15403bbec7058072f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016fcd9b2e79d6d15403bbec7058072f">&#9670;&#160;</a></span>jumpSound</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioClip PlayerController.jumpSound</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a428eff0c3f415286a7df368dcd83a687" name="a428eff0c3f415286a7df368dcd83a687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a428eff0c3f415286a7df368dcd83a687">&#9670;&#160;</a></span>nextDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 PlayerController.nextDir</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93b9fa76e5456725594e87dd40f93611" name="a93b9fa76e5456725594e87dd40f93611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b9fa76e5456725594e87dd40f93611">&#9670;&#160;</a></span>rb</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rigidbody PlayerController.rb</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fb63e4d6e703e0d41765445a66f32d7" name="a4fb63e4d6e703e0d41765445a66f32d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb63e4d6e703e0d41765445a66f32d7">&#9670;&#160;</a></span>rotationOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PlayerController.rotationOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae31a7991f0a55b70dd4904f6c666af99" name="ae31a7991f0a55b70dd4904f6c666af99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae31a7991f0a55b70dd4904f6c666af99">&#9670;&#160;</a></span>scoreCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PlayerController.scoreCounter = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a076708ee0d3c0e684d85e92a7ad6d4af" name="a076708ee0d3c0e684d85e92a7ad6d4af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a076708ee0d3c0e684d85e92a7ad6d4af">&#9670;&#160;</a></span>shield</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">shieldScript PlayerController.shield</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0928605583f0563cd84fe43119d336ec" name="a0928605583f0563cd84fe43119d336ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0928605583f0563cd84fe43119d336ec">&#9670;&#160;</a></span>speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PlayerController.speed = 5f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40cc33c20366a04888a450e8aecf0409" name="a40cc33c20366a04888a450e8aecf0409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40cc33c20366a04888a450e8aecf0409">&#9670;&#160;</a></span>speedRot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PlayerController.speedRot = 1000f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5f69bfc908da791fabcd4cf77eafdcc" name="ad5f69bfc908da791fabcd4cf77eafdcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f69bfc908da791fabcd4cf77eafdcc">&#9670;&#160;</a></span>squishThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PlayerController.squishThreshold = 0.2f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac85feb612beb223ae47f07232140550c" name="ac85feb612beb223ae47f07232140550c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac85feb612beb223ae47f07232140550c">&#9670;&#160;</a></span>uimanager</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_u_imanager.html">UImanager</a> PlayerController.uimanager</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><b>PlayerController.cs</b></li>
+<li><a class="el" href="_player_controller_8cs.html">PlayerController.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

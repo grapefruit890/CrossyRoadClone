@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_train_spawner_1_1_train_data" kind="class" language="C#" prot="private">
+    <compoundname>TrainSpawner::TrainData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_train_spawner_1_1_train_data_1aa5a4fcc1e3b779cd75de824208fe2acd" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject TrainSpawner.TrainData.obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <qualifiedname>TrainSpawner.TrainData.obj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="117" column="27" bodyfile="TrainSpawner.cs" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1_1_train_data_1a213118916c6283408a4767cc8047bcf9" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 TrainSpawner.TrainData.targetPos</definition>
+        <argsstring></argsstring>
+        <name>targetPos</name>
+        <qualifiedname>TrainSpawner.TrainData.targetPos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="118" column="24" bodyfile="TrainSpawner.cs" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1_1_train_data_1a3c6beeaa1dee5e9760635f41ef083e12" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TrainSpawner.TrainData.speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <qualifiedname>TrainSpawner.TrainData.speed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="119" column="22" bodyfile="TrainSpawner.cs" bodystart="119" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_train_spawner_1_1_train_data_1afb9860414e9e05888d196b25048e55a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TrainSpawner.TrainData.TrainData</definition>
+        <argsstring>(GameObject obj, Vector3 targetPos, float speed)</argsstring>
+        <name>TrainData</name>
+        <qualifiedname>TrainSpawner.TrainData.TrainData</qualifiedname>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>targetPos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="121" column="16" bodyfile="TrainSpawner.cs" bodystart="121" bodyend="126"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TrainSpawner.cs" line="115" column="12" bodyfile="TrainSpawner.cs" bodystart="116" bodyend="127"/>
+    <listofallmembers>
+      <member refid="class_train_spawner_1_1_train_data_1aa5a4fcc1e3b779cd75de824208fe2acd" prot="public" virt="non-virtual"><scope>TrainSpawner::TrainData</scope><name>obj</name></member>
+      <member refid="class_train_spawner_1_1_train_data_1a3c6beeaa1dee5e9760635f41ef083e12" prot="public" virt="non-virtual"><scope>TrainSpawner::TrainData</scope><name>speed</name></member>
+      <member refid="class_train_spawner_1_1_train_data_1a213118916c6283408a4767cc8047bcf9" prot="public" virt="non-virtual"><scope>TrainSpawner::TrainData</scope><name>targetPos</name></member>
+      <member refid="class_train_spawner_1_1_train_data_1afb9860414e9e05888d196b25048e55a3" prot="public" virt="non-virtual"><scope>TrainSpawner::TrainData</scope><name>TrainData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

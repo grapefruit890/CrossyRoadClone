@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
@@ -15,6 +16,11 @@ public class CameraFollow : MonoBehaviour
 
     void Start()
     {
+        // if (target == null)
+        // {
+        //     target = GameObject.FindGameObjectWithTag("Player").transform;
+        // }
+        StartCoroutine(WaitForPlayer());
         currentOffset = offset;
     }
 
@@ -43,4 +49,16 @@ public class CameraFollow : MonoBehaviour
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
         transform.position = smoothedPosition;
     }
+    IEnumerator WaitForPlayer()
+    {
+        while (target == null)
+        {
+            GameObject ply = GameObject.FindGameObjectWithTag("Player");
+            if (ply != null)
+                target = ply.transform;
+
+            yield return null;
+        }
+    }
+
 }

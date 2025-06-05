@@ -12,6 +12,8 @@ TagManager:
   - Coin
   - Effects
   - Water
+  - GameManager
+  - AudioListener
   layers:
   - Default
   - TransparentFX

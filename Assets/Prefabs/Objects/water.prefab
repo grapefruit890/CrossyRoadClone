@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   waterLilyPrefab: {fileID: 8694870943565946083, guid: 38f2f6158c318a341b01506b3873000f, type: 3}
-  waterSplashPrefab: {fileID: 867176255391507820, guid: 8a2c5522446546e4c86101f1609dc6fe, type: 3}
+  waterSplashPrefab: {fileID: 4284312744325379190, guid: 02bf1934f017529479169af8f6729d36, type: 3}
 --- !u!65 &706477773712430156
 BoxCollider:
   m_ObjectHideFlags: 0

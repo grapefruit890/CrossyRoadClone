@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -8,11 +9,14 @@ public class waterSpawner : MonoBehaviour
     public GameObject waterLilyPrefab;
     private GameObject waterLily;
     public GameObject waterSplashPrefab;
+    
     void Start()
     {
-        if (player == null) {
-            player = GameObject.FindWithTag("Player");
-        }
+        // if (player == null) {
+        //     player = GameObject.FindWithTag("Player");
+        // }
+        StartCoroutine(WaitForPlayer());
+
         Vector3 spawnPos = new Vector3(transform.position.x -0.057f, transform.position.y, transform.position.z + 0.15f);
         if (waterLily == null) {
             waterLily = Instantiate(waterLilyPrefab, spawnPos, Quaternion.Euler(transform.rotation.x, transform.rotation.y - 225f, transform.rotation.z)); 
@@ -31,7 +35,16 @@ public class waterSpawner : MonoBehaviour
     void OnTriggerEnter(Collider collider) {
         if (collider.gameObject.CompareTag("Player")) {
             Vector3 pos = new Vector3 (player.transform.position.x, player.transform.position.y - 0.3f, player.transform.position.z);
-            Instantiate(waterSplashPrefab, pos, Quaternion.identity);
+            Instantiate(waterSplashPrefab, pos, Quaternion.Euler(-90, 0, 0));
+        }
+    }
+
+    IEnumerator WaitForPlayer()
+    {
+        while (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            yield return null;
         }
     }
 }

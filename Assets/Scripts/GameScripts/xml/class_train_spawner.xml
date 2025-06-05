@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_train_spawner" kind="class" language="C#" prot="public">
+    <compoundname>TrainSpawner</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <innerclass refid="class_train_spawner_1_1_train_data" prot="private">TrainSpawner::TrainData</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_train_spawner_1a0c20cbdc0ab894b65189cc5c61479d55" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject TrainSpawner.player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <qualifiedname>TrainSpawner.player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="9" column="23" bodyfile="TrainSpawner.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1ab77c0185dfcaa8c956aa953eaed20fc0" prot="public" static="no" mutable="no">
+        <type>GameObject[]</type>
+        <definition>GameObject [] TrainSpawner.trainPrefabs</definition>
+        <argsstring></argsstring>
+        <name>trainPrefabs</name>
+        <qualifiedname>TrainSpawner.trainPrefabs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="10" column="23" bodyfile="TrainSpawner.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1aea75eb733ea03d96198490e411de014a" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject TrainSpawner.trafficLightPrefab</definition>
+        <argsstring></argsstring>
+        <name>trafficLightPrefab</name>
+        <qualifiedname>TrainSpawner.trafficLightPrefab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="11" column="23" bodyfile="TrainSpawner.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1ad7da6dd57ecdc20e088a3757035d9825" prot="public" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource TrainSpawner.audioSource</definition>
+        <argsstring></argsstring>
+        <name>audioSource</name>
+        <qualifiedname>TrainSpawner.audioSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="12" column="24" bodyfile="TrainSpawner.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1afa4ef8e128f47ed943a62b9a506cee09" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip TrainSpawner.clip</definition>
+        <argsstring></argsstring>
+        <name>clip</name>
+        <qualifiedname>TrainSpawner.clip</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="13" column="22" bodyfile="TrainSpawner.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1a01a080aaf774486dab50d64bcc1764d2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TrainSpawner.speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <qualifiedname>TrainSpawner.speed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="21" column="18" bodyfile="TrainSpawner.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_train_spawner_1a14c5aaaf7f22f55e51290c1bfc37f2e1" prot="private" static="no" mutable="no">
+        <type>Queue&lt; <ref refid="class_train_spawner_1_1_train_data" kindref="compound">TrainData</ref> &gt;</type>
+        <definition>Queue&lt;TrainData&gt; TrainSpawner.activeTrains</definition>
+        <argsstring></argsstring>
+        <name>activeTrains</name>
+        <qualifiedname>TrainSpawner.activeTrains</qualifiedname>
+        <initializer>= new Queue&lt;<ref refid="class_train_spawner_1_1_train_data" kindref="compound">TrainData</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="16" column="19" bodyfile="TrainSpawner.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1aa4260ad571f2601f16f83cfb0edddc27" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TrainSpawner.spawnInterval</definition>
+        <argsstring></argsstring>
+        <name>spawnInterval</name>
+        <qualifiedname>TrainSpawner.spawnInterval</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="17" column="19" bodyfile="TrainSpawner.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1afb87d6839a79ebfc0856d5dd439ff8c0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TrainSpawner.firstSpawnTime</definition>
+        <argsstring></argsstring>
+        <name>firstSpawnTime</name>
+        <qualifiedname>TrainSpawner.firstSpawnTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="18" column="19" bodyfile="TrainSpawner.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1af408e18c66b91ec985d272968b5c36ce" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TrainSpawner.startX</definition>
+        <argsstring></argsstring>
+        <name>startX</name>
+        <qualifiedname>TrainSpawner.startX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="19" column="17" bodyfile="TrainSpawner.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1a4748d68638d6aae07e3c04186b34b56e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TrainSpawner.endX</definition>
+        <argsstring></argsstring>
+        <name>endX</name>
+        <qualifiedname>TrainSpawner.endX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="20" column="17" bodyfile="TrainSpawner.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1a57f665380acc9ec7168620f3405eba6c" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 TrainSpawner.trafficLightPos</definition>
+        <argsstring></argsstring>
+        <name>trafficLightPos</name>
+        <qualifiedname>TrainSpawner.trafficLightPos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="22" column="21" bodyfile="TrainSpawner.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1aeb0ecb7f612a5093613b3d339d0846b3" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject TrainSpawner.trafficLight</definition>
+        <argsstring></argsstring>
+        <name>trafficLight</name>
+        <qualifiedname>TrainSpawner.trafficLight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="23" column="24" bodyfile="TrainSpawner.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1ac9afc46b063d590c289b335cb3cab413" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform TrainSpawner.light1</definition>
+        <argsstring></argsstring>
+        <name>light1</name>
+        <qualifiedname>TrainSpawner.light1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="24" column="23" bodyfile="TrainSpawner.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1a87736adc406c160d4f58d424145afac7" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform TrainSpawner.light2</definition>
+        <argsstring></argsstring>
+        <name>light2</name>
+        <qualifiedname>TrainSpawner.light2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="25" column="23" bodyfile="TrainSpawner.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1a01051756a85153741f7791b38a8de648" prot="private" static="no" mutable="no">
+        <type>Renderer</type>
+        <definition>Renderer TrainSpawner.renderLight1</definition>
+        <argsstring></argsstring>
+        <name>renderLight1</name>
+        <qualifiedname>TrainSpawner.renderLight1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="26" column="22" bodyfile="TrainSpawner.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1a3cf1018eb83715b89daebb3ac4a693ac" prot="private" static="no" mutable="no">
+        <type>Renderer</type>
+        <definition>Renderer TrainSpawner.renderLight2</definition>
+        <argsstring></argsstring>
+        <name>renderLight2</name>
+        <qualifiedname>TrainSpawner.renderLight2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="27" column="22" bodyfile="TrainSpawner.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1a92376df37d66ef8c67697a951cd58af1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TrainSpawner.blinkDuration</definition>
+        <argsstring></argsstring>
+        <name>blinkDuration</name>
+        <qualifiedname>TrainSpawner.blinkDuration</qualifiedname>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="28" column="19" bodyfile="TrainSpawner.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1a0e471f27d42848e0bea7d914285d46e4" prot="private" static="no" mutable="no">
+        <type>Coroutine</type>
+        <definition>Coroutine TrainSpawner.blinkRoutine</definition>
+        <argsstring></argsstring>
+        <name>blinkRoutine</name>
+        <qualifiedname>TrainSpawner.blinkRoutine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="29" column="23" bodyfile="TrainSpawner.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_train_spawner_1ae350fb87c809590a22cf0c655c4065a9" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TrainSpawner.blinkSpeed</definition>
+        <argsstring></argsstring>
+        <name>blinkSpeed</name>
+        <qualifiedname>TrainSpawner.blinkSpeed</qualifiedname>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="30" column="19" bodyfile="TrainSpawner.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_train_spawner_1a352ddc73dabe0c3a266c6ed5eb9539c3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TrainSpawner.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>TrainSpawner.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="33" column="10" bodyfile="TrainSpawner.cs" bodystart="33" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_train_spawner_1aa48feb89ec2054fb23cda055ed8f4e49" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TrainSpawner.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>TrainSpawner.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="70" column="10" bodyfile="TrainSpawner.cs" bodystart="70" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_train_spawner_1a23bfb6b9aa4fee5fcddf222c0349d631" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TrainSpawner.SpawnTrain</definition>
+        <argsstring>()</argsstring>
+        <name>SpawnTrain</name>
+        <qualifiedname>TrainSpawner.SpawnTrain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="110" column="10" bodyfile="TrainSpawner.cs" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_train_spawner_1ad7b40970abae864239c85aa28abec543" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator TrainSpawner.BlinkLights</definition>
+        <argsstring>()</argsstring>
+        <name>BlinkLights</name>
+        <qualifiedname>TrainSpawner.BlinkLights</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="128" column="17" bodyfile="TrainSpawner.cs" bodystart="128" bodyend="175"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_train_spawner_1a95c68563fdd29938e9ceefbd7422049a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TrainSpawner.StartBlinking</definition>
+        <argsstring>()</argsstring>
+        <name>StartBlinking</name>
+        <qualifiedname>TrainSpawner.StartBlinking</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TrainSpawner.cs" line="177" column="17" bodyfile="TrainSpawner.cs" bodystart="177" bodyend="181"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>TrainSpawner</label>
+        <link refid="class_train_spawner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>TrainSpawner</label>
+        <link refid="class_train_spawner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="TrainSpawner.cs" line="7" column="7" bodyfile="TrainSpawner.cs" bodystart="8" bodyend="183"/>
+    <listofallmembers>
+      <member refid="class_train_spawner_1a14c5aaaf7f22f55e51290c1bfc37f2e1" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>activeTrains</name></member>
+      <member refid="class_train_spawner_1ad7da6dd57ecdc20e088a3757035d9825" prot="public" virt="non-virtual"><scope>TrainSpawner</scope><name>audioSource</name></member>
+      <member refid="class_train_spawner_1a92376df37d66ef8c67697a951cd58af1" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>blinkDuration</name></member>
+      <member refid="class_train_spawner_1ad7b40970abae864239c85aa28abec543" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>BlinkLights</name></member>
+      <member refid="class_train_spawner_1a0e471f27d42848e0bea7d914285d46e4" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>blinkRoutine</name></member>
+      <member refid="class_train_spawner_1ae350fb87c809590a22cf0c655c4065a9" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>blinkSpeed</name></member>
+      <member refid="class_train_spawner_1afa4ef8e128f47ed943a62b9a506cee09" prot="public" virt="non-virtual"><scope>TrainSpawner</scope><name>clip</name></member>
+      <member refid="class_train_spawner_1a4748d68638d6aae07e3c04186b34b56e" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>endX</name></member>
+      <member refid="class_train_spawner_1afb87d6839a79ebfc0856d5dd439ff8c0" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>firstSpawnTime</name></member>
+      <member refid="class_train_spawner_1ac9afc46b063d590c289b335cb3cab413" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>light1</name></member>
+      <member refid="class_train_spawner_1a87736adc406c160d4f58d424145afac7" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>light2</name></member>
+      <member refid="class_train_spawner_1a0c20cbdc0ab894b65189cc5c61479d55" prot="public" virt="non-virtual"><scope>TrainSpawner</scope><name>player</name></member>
+      <member refid="class_train_spawner_1a01051756a85153741f7791b38a8de648" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>renderLight1</name></member>
+      <member refid="class_train_spawner_1a3cf1018eb83715b89daebb3ac4a693ac" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>renderLight2</name></member>
+      <member refid="class_train_spawner_1aa4260ad571f2601f16f83cfb0edddc27" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>spawnInterval</name></member>
+      <member refid="class_train_spawner_1a23bfb6b9aa4fee5fcddf222c0349d631" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>SpawnTrain</name></member>
+      <member refid="class_train_spawner_1a01a080aaf774486dab50d64bcc1764d2" prot="public" virt="non-virtual"><scope>TrainSpawner</scope><name>speed</name></member>
+      <member refid="class_train_spawner_1a352ddc73dabe0c3a266c6ed5eb9539c3" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>Start</name></member>
+      <member refid="class_train_spawner_1a95c68563fdd29938e9ceefbd7422049a" prot="public" virt="non-virtual"><scope>TrainSpawner</scope><name>StartBlinking</name></member>
+      <member refid="class_train_spawner_1af408e18c66b91ec985d272968b5c36ce" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>startX</name></member>
+      <member refid="class_train_spawner_1aeb0ecb7f612a5093613b3d339d0846b3" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>trafficLight</name></member>
+      <member refid="class_train_spawner_1a57f665380acc9ec7168620f3405eba6c" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>trafficLightPos</name></member>
+      <member refid="class_train_spawner_1aea75eb733ea03d96198490e411de014a" prot="public" virt="non-virtual"><scope>TrainSpawner</scope><name>trafficLightPrefab</name></member>
+      <member refid="class_train_spawner_1ab77c0185dfcaa8c956aa953eaed20fc0" prot="public" virt="non-virtual"><scope>TrainSpawner</scope><name>trainPrefabs</name></member>
+      <member refid="class_train_spawner_1aa48feb89ec2054fb23cda055ed8f4e49" prot="private" virt="non-virtual"><scope>TrainSpawner</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

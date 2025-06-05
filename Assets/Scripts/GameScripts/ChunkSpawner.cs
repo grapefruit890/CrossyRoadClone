@@ -5,25 +5,44 @@ using UnityEngine;
 public class ChunkSpawner : MonoBehaviour
 {
     private GameObject roadLine;
-    // private GameObject trafficLight;
     private int grassCounter = 0;
     private int roadCounter = 0;
+    private float maxZ;
     public Transform player;
     public GameObject[] chunkPrefabs; 
     public float chunkSize = 5; 
     public int initialChunks = 5; 
     public GameObject linePrefab;
-    // public GameObject trafficLightPrefab;
 
     public GameObject newChunk;
 
     public Queue<GameObject> activeChunks = new Queue<GameObject>();
     private Queue<GameObject> activeRoadLines = new Queue<GameObject>();
-    // public Queue<GameObject> activeTrafficLights = new Queue<GameObject>();
     private Vector3 nextSpawnPosition = Vector3.zero;
+    private GameData data;
+    public GameObject[] characterPrefabs;
+    public GameObject characterPrefab;
+    
 
     void Start()
     {
+        // if (player == null)
+        // {
+        //     player = GameObject.FindGameObjectWithTag("Player").transform;
+        // }
+
+        if (characterPrefab == null)
+        {
+            data = BinarySaveSystem.Load();
+            int id = data.selectedCharacter;
+            characterPrefab = characterPrefabs[id];
+
+            player = Instantiate(characterPrefab).transform;
+        }
+
+        int backwardChunks = 8;
+        nextSpawnPosition = new Vector3(0, 0, -chunkSize * backwardChunks);
+
         for (int i = 0; i < initialChunks; i++)
         {
             SpawnChunk();
@@ -33,7 +52,7 @@ public class ChunkSpawner : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(player.position, nextSpawnPosition) < chunkSize * 9f) 
+        if (Vector3.Distance(player.position, nextSpawnPosition) < chunkSize * 13f) 
         {
             SpawnChunk();
         }
@@ -41,7 +60,8 @@ public class ChunkSpawner : MonoBehaviour
         if (activeChunks.Count > 0) {
             GameObject oldestChunk = activeChunks.Peek();
 
-            if (player.transform.position.z - oldestChunk.transform.position.z > 7f)
+            maxZ = player.GetComponent<PlayerController>().GetMaxZ();
+            if (maxZ - oldestChunk.transform.position.z > 8f)
             {
                 GameObject chunkToRemove = activeChunks.Dequeue();
                 Destroy(chunkToRemove);
@@ -54,16 +74,10 @@ public class ChunkSpawner : MonoBehaviour
                 Destroy(oldRoadLine);
             }
         }
-
-        // if (activeTrafficLights.Count != 0) {
-        //     if (player.transform.position.z - activeTrafficLights.Peek().transform.position.z > 6f) {
-        //         GameObject oldTrafficLight = activeTrafficLights.Dequeue();
-        //         Destroy(oldTrafficLight);
-        //     }
-        // }
     }
 
 
+    /// <summary> Функция генерации чанков </summary>
     void SpawnChunk()
     {
         GameObject chunkPrefab = chunkPrefabs[UnityEngine.Random.Range(0, chunkPrefabs.Length)];
@@ -94,10 +108,6 @@ public class ChunkSpawner : MonoBehaviour
         if (chunkPrefab.name == "railway") {
             roadCounter = 0;
             grassCounter = 0;
-
-            // Vector3 trafficLightPos = new Vector3(nextSpawnPosition.x, nextSpawnPosition.y + 0.62f, nextSpawnPosition.z + 0.1f);
-            // trafficLight = Instantiate(trafficLightPrefab, trafficLightPos, Quaternion.identity);
-            // activeTrafficLights.Enqueue(trafficLight);
         }
 
         if (chunkPrefab.name == "water") {
@@ -109,7 +119,5 @@ public class ChunkSpawner : MonoBehaviour
         
         activeChunks.Enqueue(newChunk);
         nextSpawnPosition += new Vector3(0, 0, chunkSize);
-
     }
-
 }

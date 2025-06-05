@@ -19,10 +19,11 @@ public class grassSpawner : MonoBehaviour
 
     void Start()
     {
-        if (player == null)
-        {
-            player = GameObject.FindWithTag("Player");
-        }
+        // if (player == null)
+        // {
+        //     player = GameObject.FindWithTag("Player");
+        // }
+        StartCoroutine(WaitForPlayer());
        StartCoroutine(treeSpawn()); 
     }
 
@@ -84,5 +85,14 @@ IEnumerator treeSpawn()
         }
     }
 }
+
+    IEnumerator WaitForPlayer()
+    {
+        while (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            yield return null;
+        }
+    }
 
 }

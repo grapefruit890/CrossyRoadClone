@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -17,12 +18,14 @@ public class CarSpawner : MonoBehaviour
 
     void Start()
     {
-        if (player == null)
-        {
-            player = GameObject.FindWithTag("Player");
-        }
+        // if (player == null)
+        // {
+        //     player = GameObject.FindWithTag("Player");
+        // }
 
-        startX = Random.Range(0, 2) == 0 ? 12 : -12;
+        StartCoroutine(WaitForPlayer());
+
+        startX = Random.Range(0, 2) == 0 ? 18 : -18;
         endX = -startX; 
 
         previousSpeed = maxCarSpeed;
@@ -72,7 +75,7 @@ public class CarSpawner : MonoBehaviour
     {
         GameObject carPrefab = carPrefabs[Random.Range(0, carPrefabs.Length)];
 
-        Quaternion rotation = startX == 12 ? Quaternion.identity : Quaternion.Euler(0, 180, 0);
+        Quaternion rotation = startX == 18 ? Quaternion.identity : Quaternion.Euler(0, 180, 0);
 
         Vector3 spawnPos = new Vector3(startX, 0.1f, transform.position.z);
         Vector3 targetPos = new Vector3(endX, 0.1f, transform.position.z);
@@ -114,4 +117,13 @@ public class CarSpawner : MonoBehaviour
             Debug.Log("Beeep");
         }
     }
+    IEnumerator WaitForPlayer()
+    {
+        while (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            yield return null;
+        }
+    }
+
 }

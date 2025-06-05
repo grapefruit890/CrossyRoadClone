@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_game_manager_script" kind="class" language="C#" prot="public">
+    <compoundname>GameManagerScript</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_game_manager_script_1a1dfa13ca609a793065c7325bc9e82f89" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject GameManagerScript.BuiltInMenu</definition>
+        <argsstring></argsstring>
+        <name>BuiltInMenu</name>
+        <qualifiedname>GameManagerScript.BuiltInMenu</qualifiedname>
+        <briefdescription>
+<para>Ссылка на объект встроенного меню </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Например, легко включить/отключить: <programlisting filename=".cs"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_manager_script_1a600b8ada7716af7a85d4271102fb1681" kindref="member">Update</ref>()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="class_game_manager_script_1a1dfa13ca609a793065c7325bc9e82f89" kindref="member">BuiltInMenu</ref>.setActive(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para>
+<para>} </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameManagerScript.cs" line="17" column="23" bodyfile="GameManagerScript.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_script_1a6cd63982799b526ed08a5d302d8d1ac7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GameManagerScript.isPaused</definition>
+        <argsstring></argsstring>
+        <name>isPaused</name>
+        <qualifiedname>GameManagerScript.isPaused</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameManagerScript.cs" line="19" column="17" bodyfile="GameManagerScript.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_game_manager_script_1aadded27f123fdc162b14dc3a6a320eff" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GameManagerScript.cursorVisible</definition>
+        <argsstring></argsstring>
+        <name>cursorVisible</name>
+        <qualifiedname>GameManagerScript.cursorVisible</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameManagerScript.cs" line="18" column="18" bodyfile="GameManagerScript.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_game_manager_script_1a51acc0112ff3191f7c22046af6556a1c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManagerScript.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>GameManagerScript.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameManagerScript.cs" line="21" column="10" bodyfile="GameManagerScript.cs" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_script_1a600b8ada7716af7a85d4271102fb1681" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManagerScript.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>GameManagerScript.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameManagerScript.cs" line="25" column="10" bodyfile="GameManagerScript.cs" bodystart="25" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_script_1a519cd88b041d8a1fd6de22409624c8c8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManagerScript.showBuiltInMenu</definition>
+        <argsstring>(bool visible)</argsstring>
+        <name>showBuiltInMenu</name>
+        <qualifiedname>GameManagerScript.showBuiltInMenu</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+<para>Функция отображения встроенного игрового меню (меню паузы) по нажатию на Escape. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visible</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Флаг видимости игрового меню</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Пример использования фукнции для вызова встроенного меню <programlisting filename=".cs"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_manager_script_1a600b8ada7716af7a85d4271102fb1681" kindref="member">Update</ref>()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Input.GetKeyDown(KeyCode.Escape))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game_manager_script_1a6cd63982799b526ed08a5d302d8d1ac7" kindref="member">isPaused</ref><sp/>=<sp/>!<ref refid="class_game_manager_script_1a6cd63982799b526ed08a5d302d8d1ac7" kindref="member">isPaused</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game_manager_script_1aadded27f123fdc162b14dc3a6a320eff" kindref="member">cursorVisible</ref><sp/>=<sp/>!<ref refid="class_game_manager_script_1aadded27f123fdc162b14dc3a6a320eff" kindref="member">cursorVisible</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game_manager_script_1a519cd88b041d8a1fd6de22409624c8c8" kindref="member">showBuiltInMenu</ref>(<ref refid="class_game_manager_script_1aadded27f123fdc162b14dc3a6a320eff" kindref="member">cursorVisible</ref>);</highlight></codeline>
+<codeline><highlight class="normal">}<sp/></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameManagerScript.cs" line="51" column="10" bodyfile="GameManagerScript.cs" bodystart="51" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_game_manager_script_1ae1ddb14c6af4e43f47fa805cd517344b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManagerScript.resumeButton</definition>
+        <argsstring>()</argsstring>
+        <name>resumeButton</name>
+        <qualifiedname>GameManagerScript.resumeButton</qualifiedname>
+        <briefdescription>
+<para>Функция для скрытия встроенного меню и продолжения игры по нажатию на UI кнопку </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameManagerScript.cs" line="62" column="17" bodyfile="GameManagerScript.cs" bodystart="62" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_script_1a55fff52e52083f5711cc241591e86a8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManagerScript.restartButton</definition>
+        <argsstring>()</argsstring>
+        <name>restartButton</name>
+        <qualifiedname>GameManagerScript.restartButton</qualifiedname>
+        <briefdescription>
+<para>Функция перезагрузки уровня по нажатию на UI кнопку </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameManagerScript.cs" line="71" column="17" bodyfile="GameManagerScript.cs" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_script_1ab6c93588caf9af7bf09b7f847d9024e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManagerScript.mainMenuButton</definition>
+        <argsstring>()</argsstring>
+        <name>mainMenuButton</name>
+        <qualifiedname>GameManagerScript.mainMenuButton</qualifiedname>
+        <briefdescription>
+<para>Функция возвращения в главное меню игры по нажатию на UI кнопку </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameManagerScript.cs" line="78" column="17" bodyfile="GameManagerScript.cs" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_script_1a6437bd6e5a17d0220097be22be351906" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManagerScript.exitButton</definition>
+        <argsstring>()</argsstring>
+        <name>exitButton</name>
+        <qualifiedname>GameManagerScript.exitButton</qualifiedname>
+        <briefdescription>
+<para>Функция полного выхода из игры по нажатию на UI кнопку </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameManagerScript.cs" line="86" column="17" bodyfile="GameManagerScript.cs" bodystart="86" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GameManagerScript</label>
+        <link refid="class_game_manager_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GameManagerScript</label>
+        <link refid="class_game_manager_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="GameManagerScript.cs" line="4" column="7" bodyfile="GameManagerScript.cs" bodystart="5" bodyend="89"/>
+    <listofallmembers>
+      <member refid="class_game_manager_script_1a1dfa13ca609a793065c7325bc9e82f89" prot="public" virt="non-virtual"><scope>GameManagerScript</scope><name>BuiltInMenu</name></member>
+      <member refid="class_game_manager_script_1aadded27f123fdc162b14dc3a6a320eff" prot="private" virt="non-virtual"><scope>GameManagerScript</scope><name>cursorVisible</name></member>
+      <member refid="class_game_manager_script_1a6437bd6e5a17d0220097be22be351906" prot="public" virt="non-virtual"><scope>GameManagerScript</scope><name>exitButton</name></member>
+      <member refid="class_game_manager_script_1a6cd63982799b526ed08a5d302d8d1ac7" prot="public" virt="non-virtual"><scope>GameManagerScript</scope><name>isPaused</name></member>
+      <member refid="class_game_manager_script_1ab6c93588caf9af7bf09b7f847d9024e6" prot="public" virt="non-virtual"><scope>GameManagerScript</scope><name>mainMenuButton</name></member>
+      <member refid="class_game_manager_script_1a55fff52e52083f5711cc241591e86a8c" prot="public" virt="non-virtual"><scope>GameManagerScript</scope><name>restartButton</name></member>
+      <member refid="class_game_manager_script_1ae1ddb14c6af4e43f47fa805cd517344b" prot="public" virt="non-virtual"><scope>GameManagerScript</scope><name>resumeButton</name></member>
+      <member refid="class_game_manager_script_1a519cd88b041d8a1fd6de22409624c8c8" prot="private" virt="non-virtual"><scope>GameManagerScript</scope><name>showBuiltInMenu</name></member>
+      <member refid="class_game_manager_script_1a51acc0112ff3191f7c22046af6556a1c" prot="private" virt="non-virtual"><scope>GameManagerScript</scope><name>Start</name></member>
+      <member refid="class_game_manager_script_1a600b8ada7716af7a85d4271102fb1681" prot="private" virt="non-virtual"><scope>GameManagerScript</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

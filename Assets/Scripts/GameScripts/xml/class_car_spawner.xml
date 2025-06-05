@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_car_spawner" kind="class" language="C#" prot="public">
+    <compoundname>CarSpawner</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <innerclass refid="class_car_spawner_1_1_car_data" prot="private">CarSpawner::CarData</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_car_spawner_1aeaeed40569aa95558e3abdcff65ba31f" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject CarSpawner.player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <qualifiedname>CarSpawner.player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CarSpawner.cs" line="7" column="23" bodyfile="CarSpawner.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_car_spawner_1a0e57fbae92305b014c4528c214f9c47e" prot="public" static="no" mutable="no">
+        <type>GameObject[]</type>
+        <definition>GameObject [] CarSpawner.carPrefabs</definition>
+        <argsstring></argsstring>
+        <name>carPrefabs</name>
+        <qualifiedname>CarSpawner.carPrefabs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CarSpawner.cs" line="8" column="23" bodyfile="CarSpawner.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_car_spawner_1af28fcdc45b16803f4e8bd37b951463fd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CarSpawner.minCarSpeed</definition>
+        <argsstring></argsstring>
+        <name>minCarSpeed</name>
+        <qualifiedname>CarSpawner.minCarSpeed</qualifiedname>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CarSpawner.cs" line="9" column="18" bodyfile="CarSpawner.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_car_spawner_1aa05dce26a05e01d0e8ef55350f514773" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CarSpawner.maxCarSpeed</definition>
+        <argsstring></argsstring>
+        <name>maxCarSpeed</name>
+        <qualifiedname>CarSpawner.maxCarSpeed</qualifiedname>
+        <initializer>= 7f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CarSpawner.cs" line="10" column="18" bodyfile="CarSpawner.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_car_spawner_1ab67118a2e1d35d2c9973cfafbaad9ff2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CarSpawner.spawnInterval</definition>
+        <argsstring></argsstring>
+        <name>spawnInterval</name>
+        <qualifiedname>CarSpawner.spawnInterval</qualifiedname>
+        <initializer>= 7f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CarSpawner.cs" line="11" column="18" bodyfile="CarSpawner.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_car_spawner_1aad5fca33d96ceebd5b6435b1a4e48cda" prot="private" static="no" mutable="no">
+        <type>Queue&lt; <ref refid="class_car_spawner_1_1_car_data" kindref="compound">CarData</ref> &gt;</type>
+        <definition>Queue&lt;CarData&gt; CarSpawner.activeCars</definition>
+        <argsstring></argsstring>
+        <name>activeCars</name>
+        <qualifiedname>CarSpawner.activeCars</qualifiedname>
+        <initializer>= new Queue&lt;<ref refid="class_car_spawner_1_1_car_data" kindref="compound">CarData</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CarSpawner.cs" line="13" column="19" bodyfile="CarSpawner.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_car_spawner_1ab711d8c1a232bff77d51eec41577a902" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CarSpawner.previousSpeed</definition>
+        <argsstring></argsstring>
+        <name>previousSpeed</name>
+        <qualifiedname>CarSpawner.previousSpeed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CarSpawner.cs" line="14" column="19" bodyfile="CarSpawner.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_car_spawner_1a51c0db7e88771506c99e967d8e96deca" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CarSpawner.startX</definition>
+        <argsstring></argsstring>
+        <name>startX</name>
+        <qualifiedname>CarSpawner.startX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CarSpawner.cs" line="15" column="17" bodyfile="CarSpawner.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_car_spawner_1a2386bf90da694d70b32829eef43d15c4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CarSpawner.endX</definition>
+        <argsstring></argsstring>
+        <name>endX</name>
+        <qualifiedname>CarSpawner.endX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CarSpawner.cs" line="16" column="17" bodyfile="CarSpawner.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_car_spawner_1a875da4038fe33bfe0eb973da1bdabe0e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CarSpawner.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>CarSpawner.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CarSpawner.cs" line="18" column="10" bodyfile="CarSpawner.cs" bodystart="18" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_car_spawner_1acde2f8e45ab351c8500f6455f5e6450c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CarSpawner.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>CarSpawner.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CarSpawner.cs" line="33" column="10" bodyfile="CarSpawner.cs" bodystart="33" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_car_spawner_1aafc74f9a0e6a4059f9860798ff2b85f7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CarSpawner.SpawnCar</definition>
+        <argsstring>()</argsstring>
+        <name>SpawnCar</name>
+        <qualifiedname>CarSpawner.SpawnCar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CarSpawner.cs" line="71" column="10" bodyfile="CarSpawner.cs" bodystart="71" bodyend="96"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CarSpawner</label>
+        <link refid="class_car_spawner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CarSpawner</label>
+        <link refid="class_car_spawner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="CarSpawner.cs" line="5" column="7" bodyfile="CarSpawner.cs" bodystart="6" bodyend="117"/>
+    <listofallmembers>
+      <member refid="class_car_spawner_1aad5fca33d96ceebd5b6435b1a4e48cda" prot="private" virt="non-virtual"><scope>CarSpawner</scope><name>activeCars</name></member>
+      <member refid="class_car_spawner_1a0e57fbae92305b014c4528c214f9c47e" prot="public" virt="non-virtual"><scope>CarSpawner</scope><name>carPrefabs</name></member>
+      <member refid="class_car_spawner_1a2386bf90da694d70b32829eef43d15c4" prot="private" virt="non-virtual"><scope>CarSpawner</scope><name>endX</name></member>
+      <member refid="class_car_spawner_1aa05dce26a05e01d0e8ef55350f514773" prot="public" virt="non-virtual"><scope>CarSpawner</scope><name>maxCarSpeed</name></member>
+      <member refid="class_car_spawner_1af28fcdc45b16803f4e8bd37b951463fd" prot="public" virt="non-virtual"><scope>CarSpawner</scope><name>minCarSpeed</name></member>
+      <member refid="class_car_spawner_1aeaeed40569aa95558e3abdcff65ba31f" prot="public" virt="non-virtual"><scope>CarSpawner</scope><name>player</name></member>
+      <member refid="class_car_spawner_1ab711d8c1a232bff77d51eec41577a902" prot="private" virt="non-virtual"><scope>CarSpawner</scope><name>previousSpeed</name></member>
+      <member refid="class_car_spawner_1aafc74f9a0e6a4059f9860798ff2b85f7" prot="private" virt="non-virtual"><scope>CarSpawner</scope><name>SpawnCar</name></member>
+      <member refid="class_car_spawner_1ab67118a2e1d35d2c9973cfafbaad9ff2" prot="public" virt="non-virtual"><scope>CarSpawner</scope><name>spawnInterval</name></member>
+      <member refid="class_car_spawner_1a875da4038fe33bfe0eb973da1bdabe0e" prot="private" virt="non-virtual"><scope>CarSpawner</scope><name>Start</name></member>
+      <member refid="class_car_spawner_1a51c0db7e88771506c99e967d8e96deca" prot="private" virt="non-virtual"><scope>CarSpawner</scope><name>startX</name></member>
+      <member refid="class_car_spawner_1acde2f8e45ab351c8500f6455f5e6450c" prot="private" virt="non-virtual"><scope>CarSpawner</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
